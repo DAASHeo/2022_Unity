@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class hammer : MonoBehaviour
 {
+    public static int count; //점수가 들어갈 변수 설정
     // Start is called before the first frame update
     void Start()
     {
@@ -18,9 +19,10 @@ public class hammer : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("ddg01"))
+        if(other.CompareTag("ddg"))
         {
-            Debug.Log("HIT 01");
+            count += 1;
+            Debug.Log("두더지를 잡았습니다! s+ 1");
         }
     }
 }

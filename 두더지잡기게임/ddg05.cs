@@ -9,10 +9,10 @@ public class ddg05 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        xPos = 3.5f;
+        xPos = -3.5f;
         yPos = 1.0f;
         zPos = -2.0f;
-        yPlus = Random.Range(0.005f, 0.01f);
+        yPlus = Random.Range(0.005f, 0.05f);
     }
 
     // Update is called once per frame

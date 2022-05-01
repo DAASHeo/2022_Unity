@@ -12,7 +12,7 @@ public class ddg01 : MonoBehaviour
         xPos = 0.0f;
         yPos = -1.0f;
         zPos = 3.0f;
-        yPlus = Random.Range(0.005f, 0.01f);
+        yPlus = Random.Range(0.005f, 0.03f);
     }
 
     // Update is called once per frame
