@@ -25,24 +25,32 @@ public class swing : MonoBehaviour
         {
             //rotX = 0;
             swordSwing = true;
+            //print("0");
         }
         if(swordSwing == true)
         {
-            rotX = rotX + rotPx;
-            if(rotX <= 0)
+            if (rotX > 90)
             {
                 rotPx = rotPx * -1;
             }
-            transform.rotation = Quaternion.Euler(rotX, 0, 0);
+            rotX = rotX + rotPx;
+            transform.localRotation = Quaternion.Euler(rotX, 0, 0);
+            if (rotX <= 0)
+            {
+                swordSwing = false;
+                rotX = 0;
+                rotPx = rotPx * -1;
+            }
         }
         if (Input.GetMouseButtonUp(0))
         {
             //rotX = 0;
-            swordSwing = false;
+            //swordSwing = false;
         }
-        if (swordSwing == false)
-        {
-            transform.rotation = Quaternion.Euler(0, 0, 0);
-        }
+        //if (swordSwing == false)
+        //{
+        //    transform.rotation = Quaternion.Euler(0, 0, 0);
+        //}
+
     }
 }
