@@ -23,7 +23,6 @@ public class swing : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(0))
         {
-            //rotX = 0;
             swordSwing = true;
             //print("0");
         }
